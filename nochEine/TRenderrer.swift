@@ -11,25 +11,13 @@ class TRenderrer: NSObject {
     
     super.init()
     self.device = device
-    setupCommandQueue(device: device)
-    setupPipelineDescriptor(device: device)
-    setupPipelineState(device: device)
-//    commandQueue = TCommandQueue(device: device)
-//    rpd = TRenderPipelineDescriptor(device:device)
-//    rps = TRenderPipelineState(device: device, renderDescriptor: rpd)
-  }
-  
-  func setupCommandQueue(device: MTLDevice) {
+
     commandQueue = TCommandQueue(device: device)
-  }
-  
-  func setupPipelineDescriptor(device: MTLDevice) {
     rpd = TRenderPipelineDescriptor(device:device)
-  }
-  
-  func setupPipelineState(device: MTLDevice) {
     rps = TRenderPipelineState(device: device, renderDescriptor: rpd)
+    
   }
+ 
 }
 
 extension TRenderrer:MTKViewDelegate {
@@ -42,7 +30,8 @@ extension TRenderrer:MTKViewDelegate {
           let renderPassDescriptor  = view.currentRenderPassDescriptor else {
       return
     }
-    _ = TCommandEncoder(buffer: TCommandBuffer(commandQueue: commandQueue),
+    _ = TCommandEncoder(commandBuffer: TCommandBuffer(commandQueue: commandQueue),
+                        objects: TObjects(device: device, objectType: .triangle),
                         pipleinState: rps,
                         descriptor: renderPassDescriptor, drawable: drawable)
   }

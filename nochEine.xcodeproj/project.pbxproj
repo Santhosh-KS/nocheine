@@ -19,6 +19,8 @@
 		2C78836A257A9C5F000B1C73 /* TMetal.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2C788369257A9C5F000B1C73 /* TMetal.metal */; };
 		2C788372257AA59A000B1C73 /* TCommandBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C788371257AA59A000B1C73 /* TCommandBuffer.swift */; };
 		2C788375257AB03E000B1C73 /* TCommandEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C788374257AB03E000B1C73 /* TCommandEncoder.swift */; };
+		2CBF72ED257C21A4006C48D7 /* TVertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF72EC257C21A4006C48D7 /* TVertex.swift */; };
+		2CBF72F1257D41E3006C48D7 /* TObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF72F0257D41E3006C48D7 /* TObjects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		2C788369257A9C5F000B1C73 /* TMetal.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = TMetal.metal; sourceTree = "<group>"; };
 		2C788371257AA59A000B1C73 /* TCommandBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCommandBuffer.swift; sourceTree = "<group>"; };
 		2C788374257AB03E000B1C73 /* TCommandEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCommandEncoder.swift; sourceTree = "<group>"; };
+		2CBF72EC257C21A4006C48D7 /* TVertex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVertex.swift; sourceTree = "<group>"; };
+		2CBF72F0257D41E3006C48D7 /* TObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TObjects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,16 +74,18 @@
 			isa = PBXGroup;
 			children = (
 				2C78836E257AA30A000B1C73 /* z-default */,
-				2C4615EF257827B6003D45CB /* TLibrary.swift */,
 				2C4615CB25780F81003D45CB /* Info.plist */,
-				2C788369257A9C5F000B1C73 /* TMetal.metal */,
-				2C4615D425780FBD003D45CB /* TView.swift */,
-				2C4615D725781063003D45CB /* TRenderrer.swift */,
 				2C4615DD25781533003D45CB /* TCommandQueue.swift */,
 				2C788374257AB03E000B1C73 /* TCommandEncoder.swift */,
 				2C788371257AA59A000B1C73 /* TCommandBuffer.swift */,
+				2C4615EF257827B6003D45CB /* TLibrary.swift */,
+				2C788369257A9C5F000B1C73 /* TMetal.metal */,
+				2CBF72F0257D41E3006C48D7 /* TObjects.swift */,
+				2C4615D725781063003D45CB /* TRenderrer.swift */,
 				2C4615E925782100003D45CB /* TRenderPipelineState.swift */,
 				2C4615EC25782302003D45CB /* TRenderPipelineDescriptor.swift */,
+				2C4615D425780FBD003D45CB /* TView.swift */,
+				2CBF72EC257C21A4006C48D7 /* TVertex.swift */,
 			);
 			path = nochEine;
 			sourceTree = "<group>";
@@ -168,12 +174,14 @@
 				2C4615F0257827B6003D45CB /* TLibrary.swift in Sources */,
 				2C4615ED25782302003D45CB /* TRenderPipelineDescriptor.swift in Sources */,
 				2C788372257AA59A000B1C73 /* TCommandBuffer.swift in Sources */,
+				2CBF72ED257C21A4006C48D7 /* TVertex.swift in Sources */,
 				2C4615DE25781533003D45CB /* TCommandQueue.swift in Sources */,
 				2C78836A257A9C5F000B1C73 /* TMetal.metal in Sources */,
 				2C4615C325780F80003D45CB /* AppDelegate.swift in Sources */,
 				2C788375257AB03E000B1C73 /* TCommandEncoder.swift in Sources */,
 				2C4615EA25782100003D45CB /* TRenderPipelineState.swift in Sources */,
 				2C4615D825781063003D45CB /* TRenderrer.swift in Sources */,
+				2CBF72F1257D41E3006C48D7 /* TObjects.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,11 +6,11 @@ struct TCommandQueue {
   public var count:Int = 0
   
   init(device d:MTLDevice,
-       withLimit maxBuffer:Int=20) {
+       withLimit maxBuffer:Int=100) {
     setup(device: d, withLimit: maxBuffer)
   }
   mutating func setup(device d:MTLDevice,
-       withLimit mb:Int=20) {
+       withLimit mb:Int) {
     
     guard let q = d.makeCommandQueue() else {
       fatalError("Failed to create a CommandQueue!")
