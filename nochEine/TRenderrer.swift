@@ -31,9 +31,9 @@ extension TRenderrer:MTKViewDelegate {
       return
     }
     _ = TCommandEncoder(commandBuffer: TCommandBuffer(commandQueue: commandQueue),
-                        objects: TObjects(device: device, objectType: .triangle),
-                        pipleinState: rps,
-                        descriptor: renderPassDescriptor, drawable: drawable)
+          objects: TObjects.init(device: device, descriptor: TObjectDescriptor.init(type: .square, color: TColor(), size: 0.5)),
+          pipleinState: rps,
+          descriptor: renderPassDescriptor, drawable: drawable)
   }
   
 }
