@@ -1,10 +1,14 @@
 import MetalKit
 
-struct TVertex {
+protocol TVertexable {
+  var position:SIMD3<Float> {get}
+}
+
+struct TVertex : TVertexable {
   var position:SIMD3<Float>
 }
 
-struct TVertexWithColor {
+struct TVertexWithColor : TVertexable {
   var position:SIMD3<Float>
   var color:SIMD4<Float>
    init(position pos:SIMD3<Float>,
