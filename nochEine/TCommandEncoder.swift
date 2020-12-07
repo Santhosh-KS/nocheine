@@ -21,7 +21,10 @@ struct TCommandEncoder {
     }
     e.setVertexBuffer(o.vertexBuffer, offset: 0, index: 0)
     e.setRenderPipelineState(ps.renderPipelineState)
-    e.drawPrimitives(type: .triangle, vertexStart: 0, vertexCount: o.verticies.count)
+    //e.drawPrimitives(type: .triangle, vertexStart: 0, vertexCount: o.verticies.count)
+    e.drawIndexedPrimitives(type: .triangle, indexCount: o.indicies.count,
+                            indexType: .uint16, indexBuffer: o.indiciesBuffer,
+                            indexBufferOffset: 0)
     e.endEncoding()
     b.commandBuffer.present(da)
     b.commandBuffer.commit()
