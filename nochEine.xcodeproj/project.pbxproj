@@ -23,6 +23,7 @@
 		2CBF72F1257D41E3006C48D7 /* TObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF72F0257D41E3006C48D7 /* TObjects.swift */; };
 		2CBF72F7257D888C006C48D7 /* TObjectsDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF72F6257D888C006C48D7 /* TObjectsDescriptor.swift */; };
 		2CBF72FE257D90E8006C48D7 /* TClampingPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF72FD257D90E8006C48D7 /* TClampingPropertyWrapper.swift */; };
+		2CBF7303257DAD2D006C48D7 /* TVertexDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF7302257DAD2D006C48D7 /* TVertexDescriptor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		2CBF72F0257D41E3006C48D7 /* TObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TObjects.swift; sourceTree = "<group>"; };
 		2CBF72F6257D888C006C48D7 /* TObjectsDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TObjectsDescriptor.swift; sourceTree = "<group>"; };
 		2CBF72FD257D90E8006C48D7 /* TClampingPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TClampingPropertyWrapper.swift; sourceTree = "<group>"; };
+		2CBF7302257DAD2D006C48D7 /* TVertexDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVertexDescriptor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				2C4615EC25782302003D45CB /* TRenderPipelineDescriptor.swift */,
 				2C4615D425780FBD003D45CB /* TView.swift */,
 				2CBF72EC257C21A4006C48D7 /* TVertex.swift */,
+				2CBF7302257DAD2D006C48D7 /* TVertexDescriptor.swift */,
 				2CBF72FD257D90E8006C48D7 /* TClampingPropertyWrapper.swift */,
 			);
 			path = nochEine;
@@ -178,6 +181,7 @@
 			files = (
 				2C4615D525780FBD003D45CB /* TView.swift in Sources */,
 				2C4615F0257827B6003D45CB /* TLibrary.swift in Sources */,
+				2CBF7303257DAD2D006C48D7 /* TVertexDescriptor.swift in Sources */,
 				2C4615ED25782302003D45CB /* TRenderPipelineDescriptor.swift in Sources */,
 				2C788372257AA59A000B1C73 /* TCommandBuffer.swift in Sources */,
 				2CBF72ED257C21A4006C48D7 /* TVertex.swift in Sources */,

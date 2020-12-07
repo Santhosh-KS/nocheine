@@ -13,7 +13,7 @@ class TRenderrer: NSObject {
     self.device = device
 
     commandQueue = TCommandQueue(device: device)
-    rpd = TRenderPipelineDescriptor(device:device)
+    rpd = TRenderPipelineDescriptor(device:device,vertexDescriptor: TVertexDescriptor())
     rps = TRenderPipelineState(device: device, renderDescriptor: rpd)
     
   }
